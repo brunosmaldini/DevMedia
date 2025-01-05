@@ -1,0 +1,122 @@
+
+div {
+    width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+}
+
+div img {
+    border-radius: 25px;
+    border: 3px solid #afddfb ;
+}
+.logo-imagem {
+    background-color: #afddfb;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding-bottom: 30px;
+}
+div .logo-imob {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.logo-imagem a {
+    text-align: center;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+
+}
+div .banner {
+    width: 1000px;
+}
+div .banner-dois {
+    width: 400px;
+}
+
+.fundo-azul {
+    background-color: #1d80c1;
+    width: 100%;
+    color: #ffffff;
+}
+
+h2 {
+    color: #1d80c1;
+    font-weight: normal;
+}
+
+.texto-azul {
+    color: #1d80c1;
+    font-weight: bold;
+}
+
+.texto-amarelo {
+    color: yellow;
+    font-weight: bold;
+}
+
+.servicos p {
+    width: 700px;
+    margin: auto;
+
+}
+
+.servicos {
+    line-height: 28px;
+}
+
+.servicos h3 {
+    padding-top: 30px;
+}
+
+.contato a {
+    background-color: #ffffff;
+    text-decoration: underline;
+    color: #1d80c1;
+    padding: 5px;
+    margin: 10px;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 15px;
+
+}
+
+.contato p {
+    background-color: black;
+    padding: 15px;
+}
+
+.contato h3 {
+    padding: 30px 0 0 0;
+}
+
+div a:hover {
+    background-color: #1d80c1;
+    color: #ffffff;
+    border: 3px solid #afddfb;
+    border-radius: 25px;
+}
+
+div .corretor {
+    width: 400px;
+}
+
+iframe { 
+    border-radius: 25px;
+    border: 5px solid#afddfb;
+}
+
+.servicos .lista {
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+}
+
+.contato .lista {
+    list-style-type: none;
+
+}
