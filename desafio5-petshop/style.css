@@ -207,3 +207,15 @@
     color: #3c184e;
     padding: 0 5px 0 5px;
   }
+
+  .inicio {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+  }
+
+  .inicio img {
+    width: 70px;
+    opacity: 75%;
+    border-radius: 50%;
+  }
