@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+    text-decoration: none;
+}
+
+
+/* TOPO FLUTUANTE */
+.topo {
+    width: 100%;
+    height: 80px;
+    background-color: #604829;
+    position: fixed;
+    z-index: 1;
+}
+
+.navegacao {
+    position: absolute;
+    right: 40px;
+    top: 40%;
+}
+
+.navegacao a {
+    margin: 0 20px;
+    font-family: "Lato";
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
+    color: #c4a47c;
+}
+
+.topo img {
+    position: absolute;
+    width: 80px;
+    left: 250px;
+}
+
+/* BANNER PARALAX*/
+
+#banner {
+    background-image: url(assets/parallax-imagem1.png);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+#banner h1 {
+    color: aliceblue;
+    font-family: 'Fraunces';
+    font-size: 100px;
+    padding-top: 300px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*CONTAINER INFORMAÇOES */  
+
+.container-1, .texto {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 10px;
+}
+
+.container-1 h2, .formatacao-cafe {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 22px;
+    color: #c4a47c;
+}
+
+.container-1 p, .formatacao-cinza {    
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin: 10px;
+}
+
+.container-2 {
+    background-image: url(assets/parallax-imagem2.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container-2 h3, .texto-paralax {
+    text-align: center;
+    color: #fff;
+    background-color: #604829;
+    font-size: 32px;
+    font-family: 'Fraunces';
+    font-weight: normal;
+    font-style: italic;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container-4 {
+    background-image: url(assets/parallax-imagem3.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#contatos {
+    background-image: url(assets/parallax-imagem4.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+
+}
+
+#contatos h2 {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 32px;
+    color: #fff;
+    background-color: #604829;
+    position: relative;
+}
+
+.box-contato {
+    margin: 40px auto 30px auto;
+    width: 600px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #604829;
+}
+
+.box-contato p {
+    padding: 10px;
+}
+
+#horarios{
+    background-image: url(assets/cafeteria.jpg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+#horarios h2 {
+    color: #fff;
+    margin: 60px auto;
+    padding-top: 100px;
+    width: 600px;
+    font-size: 32px;
+    font-family: oswald;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.lista {
+    color: #fff;
+    list-style-position: outside;
+}
+
+.lista li {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.tarja {
+    width: 550px;
+    height: 3px;
+    background-color: #604829;
+    position: absolute;
+    margin: 10px;
+    left: 350px;
+}
+
+.texto-lista {
+    left: 250px;
+    position: absolute;
+}
+
+.horario-lista {
+    right: 320px;
+    position: absolute;
+
+}
+
+.rodape {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    font-family: oswald;
+    text-align: center;
+    height: 100px;
+    padding: 25px;
+}
+
+.botao {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 100px;
+}
+
+h1, h2, h3, p {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
