@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body img {
+    width: 100px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/*logo*/
+
+.logo-inicial { /* div total */
+    padding: 35px 0px;
+    height: 115px;
+
+
+}
+
+.logo p {
+    color: #2f86d6;
+}
+
+.logo { /* div contendo logo e link */
+    width: 1024px;
+    height: 70px;
+    margin: 10px auto;
+    position: relative;
+    bottom: 50%;
+
+}
+
+.logo-img { /* div com marca e img*/
+
+
+}
+
+.logo-img a { /*div com links*/
+
+    font-size: 18px;
+    color: #233032;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.logo .logo-img img { /*imagem da div*/
+    width: 70px;
+}
+
+.link-logo {
+    position: absolute;
+    font-size: 18px;
+    color: #233032;
+    top: 41%;
+    right: 0;
+
+}
+
+.link-logo a {
+    margin: 0 10px;
+}
+
+.titulo {
+    position: absolute;
+    top: 10%;
+    left: 75px;
+    
+}
+
+
+#banner {
+    width: 100%;
+    height: 480px;
+    background-color: #2f86d6;
+    position: relative;
+}
+
+.banner-dimensao {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 187px 0;
+}
+
+.info-banner {
+    width: 470px;
+    position: absolute;
+    bottom: 15%;
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.info-banner p {
+    padding: 40px 0;
+}
+
+.info-banner h2 {
+    font-size: 28px;
+}
+
+#banner img {
+    width: 45%;
+    position: absolute;
+    right: 120px;
+    top: 0;
+}
+
+.anuncio {
+    width: 100%;
+    height: 115px;
+    color: #ffffff;
+    background-color: #233032;
+
+}
+
+.anuncio-dimensao {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+}
+
+.texto-anuncio {
+    width: 600px;
+    position: absolute;
+    left: 10px;
+}
+
+.anuncio-dimensao button {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    padding: 20px;
+    background-color: #2f86d6;
+    color: #ffffff;
+}
+
+.anuncio-dimensao a {
+    padding-left: 10px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: 700;
+}
+
+.anuncio-dimensao img {
+    width: 17px;
+    position: relative;
+    top: 4px;
+}
+
+.texto-anuncio-dois {
+    width: 600px;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+#informacoes {
+    width: 100%;
+}
+
+.container-info {
+    width: 1024px;
+    margin: 30px auto;
+}
+
+.container-texto-info {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.primeira-info, 
+.segunda-info, 
+.terceira-info {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container-info h3 {
+    padding: 20px;
+}
+
+.texto-azul {
+    color: #2f86d6;
+    font-weight: 700;
+}
