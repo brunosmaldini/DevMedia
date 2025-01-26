@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ysabeau Infant', sans-serif;
+*/
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    gap: 1%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.bg_video{
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1000;
+    background: url(imagens/3130284-uhd_3840_2160_30fps.mp4) no-repeat;
+    background-size: cover; 
+}
+
+#banner .foto img {
+   background: linear-gradient(white, white) padding-box, linear-gradient(to right, #014005, #2DA635, #82D988, #022601, #010D00) border-box;
+   border-radius: 50%;
+   border: 3px solid transparent;
+   color: #10a87d;
+   width: 20%;
+  }
+
+  #banner .texto-foto img {
+    width: 19px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 47%;
+    left: 36.5%;
+
+  }
+
+  #banner .foto {
+    display: flex;
+    align-items: center;
+  }
+
+  #banner .texto-foto {
+    padding: 1%;
+  }
+
+
+
+  #banner #links {
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    text-align: center;
+
+  }
+
+  #links div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #09A603, #067302, #034001, #022601, #30F229);
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: end;
+  }
+
+  #links div:hover {
+    background: linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 15px;
+    border: 3px solid transparent;
+  }
+
+  #banner .foto img:hover {
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    color: #10a87d;
+    cursor: ;
+
+  }
+
+
+
+
+
+
+  
+
+
