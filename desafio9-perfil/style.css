@@ -15,59 +15,67 @@ font-family: 'Ysabeau Infant', sans-serif;
     width: 100%;
     height: 100vh;
     display: flex;
-    position: relative;
     gap: 1%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0 5%;
+    padding: 3%;
 }
 
-.bg_video{
-    position: fixed; 
-    right: 0; 
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto; 
-    height: auto; 
-    z-index: -1000;
-    background: url(imagens/3130284-uhd_3840_2160_30fps.mp4) no-repeat;
-    background-size: cover; 
+/* video de background */
+video {
+  position: absolute;
+  z-index: -1; /* usado para por para tras (como se fosse camadas do canvas ) */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-#banner .foto img {
-   background: linear-gradient(white, white) padding-box, linear-gradient(to right, #014005, #2DA635, #82D988, #022601, #010D00) border-box;
-   border-radius: 50%;
-   border: 3px solid transparent;
-   color: #10a87d;
-   width: 20%;
-  }
 
-  #banner .texto-foto img {
-    width: 19px;
-    border: none;
-    background: none;
-    position: absolute;
-    top: 47%;
-    left: 36.5%;
+/* parte de foto*/
 
-  }
+.container { /*container moldura, o que fica por dentro */
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(imagens/Picsart_24-06-11_14-26-25-624.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-  #banner .foto {
-    display: flex;
-    align-items: center;
-  }
+.container::before { /*borda colorida, o que fica por fora */
+  content: "";
+  width: 215px;
+  height: 215px;
+  background-image: linear-gradient(#7CCC7A, #3F993D, #FFFFFF, #166614, #013300);
+  z-index: -1;
+  position: absolute;
+  border-radius: 100%;
+  
+}
 
-  #banner .texto-foto {
-    padding: 1%;
-  }
+/* parte de nome e cargo */
+
+.texto-foto {
+  font-family: 'Ysabeau Infant', sans-serif;
+  padding-top: 5%;
+}
+
+.texto-foto p {
+  padding-top: 10px;
+
+}
 
 
 
+/*links das redes*/
   #banner #links {
     display: flex;
-    flex-flow: column wrap;
-    width: 80%;
+    flex-flow: column wrap; 
+    width: 26%;
     text-align: center;
 
   }
@@ -76,27 +84,48 @@ font-family: 'Ysabeau Infant', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #09A603, #067302, #034001, #022601);
+    background: linear-gradient(to right, #7CCC7A, #3F993D, #166614, #013300);
     border: 2px solid black;
     padding: 10px;
     border-radius: 15px;
     text-align: end;
   }
 
+
+  /* para baixo somente hover e  before */
   #links div:hover {
+
     background: linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
     border-radius: 15px;
-    border: 3px solid transparent;
+    border: 1px solid transparent;
+    transition: 0.1s;
   }
 
-  #banner .foto img:hover {
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
-    border-radius: 50%;
-    border: 4px solid transparent;
-    color: #10a87d;
-    cursor: ;
-
+  .container:hover:before { /*borda colorida, o que fica por fora */
+    content: "";
+    width: 215px;
+    height: 215px;
+    background-image: linear-gradient(to left,   #13f78c, #0be6e6, #f700c5);
+    z-index: -1;
+    position: absolute;
+    border-radius: 100%;
+    transition: 0.1;
+    
   }
+
+  h1::before { /*tarja colorida embaixo do nome */
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, #13f78c, #0be6e6, #f700c5);
+    height: 5px;
+    width: 55px;
+    bottom: 31.5%;
+    left: 20.5%;
+  }
+
+
+
+
 
 
 
