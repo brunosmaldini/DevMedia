@@ -5,7 +5,7 @@
     padding: 0;
     text-decoration: none;
 }
-
+/*topo*/
 header {
     background-color: #00C9D0;
     position: fixed;
@@ -14,15 +14,17 @@ header {
 
 header div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 2%;
+    margin: 0 12%;
+    max-width: 1024px;
 }
 
 header img {
     width: 110px;
 }
 
+/* aba nav*/
 header nav a {
     padding: 0 10px;
     color: #ffffff;
@@ -30,43 +32,146 @@ header nav a {
 
 }
 
-header nav a:hover {
-    color: black;
+header nav a:hover, .container-link:hover {
+    color: rgba(0, 0, 0, 0.466);
     font-weight: 500;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
-    transition: 0.5s;
+    border: 2px solid rgba(0, 0, 0, 0.493);
+    border-radius: 15px ;
 }
 
+
+/* imagem de fundo*/
 .logo {
     background: url(assets/recepcao.png);
     background-size: cover;
     background-attachment: fixed;
-    height: 570px;
+    height: 435px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo .container-titulo {
+    width: 1024px;
+    height: 570px;
+    display: flex;
     justify-content: start;
+    align-items: center;
 }
 
 .logo h1 {
     line-height: 50px;
     color: #ffffff;
     font-weight: lighter;
-    padding-left: 15px;
-    text-shadow: 0px 0px 20px #00C9D0;
+    text-shadow: 0px 0px 20px #06edf5;
+    padding-left: 5%;
 }
 
 
-#sobre, #especialidades, #contato, footer {
+#sobre, #especialidades, #contato, #footer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    
+    padding: 10px;
+    margin: 10px;   
+    max-width: 1024px;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
     width: 250px
 }
+
+.sobre-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.container-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding-bottom: 20px;
+}
+
+.container-texto h2, p {
+    margin: 15px 0;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: center;
+}
+
+.titulo-lista ul {
+    padding-left: 10%;
+} 
+
+.titulo-lista h3 {
+    padding: 15px;
+    margin: 15px -15px;
+}
+
+.especialidade-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 80px;
+}
+
+.especialidade-img figure {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.541);
+}
+
+.especialidade-img h3 {
+    padding: 5px 0;
+    font-weight: 400;
+}
+
+.container-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #00C9D0;
+    font-weight: bold;
+}
+
+.container-link a {
+    color: #ffffff;
+}
+
+iframe {
+    width: 1024px;
+}
+
+footer {
+    background-color: #00C9D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+
 
 
 
