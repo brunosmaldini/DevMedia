@@ -18,6 +18,14 @@ header div {
     align-items: center;
     margin: 0 12%;
     max-width: 1024px;
+    flex-flow: row nowrap;
+}
+
+header nav {
+    display: flex;
+    flex-flow: row nowrap;
+    color: #ffffff;
+    
 }
 
 header img {
@@ -36,10 +44,15 @@ header nav a:hover, .container-link:hover {
     color: rgba(0, 0, 0, 0.466);
     font-weight: 500;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
-    border: 2px solid rgba(0, 0, 0, 0.493);
-    border-radius: 15px ;
+    transition: 0.2s;
 }
 
+/* main*/
+
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+  }
 
 /* imagem de fundo*/
 .logo {
@@ -71,20 +84,9 @@ header nav a:hover, .container-link:hover {
 
 
 #sobre, #especialidades, #contato, #footer {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;   
     max-width: 1024px;
-}
+    margin: 0 auto;
 
-section {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
 }
 
 img {
@@ -93,9 +95,9 @@ img {
 
 .sobre-img {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;  
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 
 .container-texto {
@@ -124,6 +126,13 @@ h3 {
     margin: 15px -15px;
 }
 
+.especialidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
 .especialidade-img {
     display: flex;
     justify-content: space-evenly;
@@ -142,9 +151,7 @@ h3 {
 }
 
 .container-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 150px;
     padding: 10px;
     margin: 20px;
@@ -161,7 +168,7 @@ iframe {
 }
 
 footer {
-    background-color: #00C9D0;
+    background-color: #0d6e71;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,6 +178,89 @@ footer {
 
 }
 
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 425px) {
+    header div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+
+    header {
+        max-width: 425px;
+    }
+
+    header nav {
+        border-top: 1px solid #0000008c;
+    }
+
+    .imagem-medico {
+        display: none;
+    }
+
+    iframe {
+        max-width: 425px;
+    }
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin: 0 auto  ;
+    }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    header div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        flex-flow: row nowrap;
+    }
+
+    header {
+        min-width: 768px;
+        max-width: 1024px;
+    }
+
+    .imagem-medico {
+        display: none;
+    }
+
+    iframe {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    header div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        flex-flow: row nowrap;
+    }
+
+    header {
+        min-width: 1024px;
+
+    }
+
+
+    iframe {
+        width: 1024px;
+    }
+}
 
 
 
